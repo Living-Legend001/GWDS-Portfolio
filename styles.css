@@ -1,0 +1,327 @@
+* {
+	
+}
+
+
+body {
+    
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.logo {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-top: -52px;
+    margin-left: -35px;
+}
+
+
+.icons {
+	
+	float: right;
+	margin-top: 20px;
+}
+
+
+ul {
+	float: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 60px;
+}
+
+
+ul li {
+	list-style: none;
+	margin-left: 52px;
+	margin-top: -69px;
+	font-size: 14px;
+}
+
+
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-family: Arial;
+	font-weight: bold;
+	transition: 0.4s ease-in-out;
+	
+}
+
+
+ul li a:hover {
+	color: goldenrod;
+    transform: scale(1.1);
+	transition: 0.4s;
+}
+
+
+#hamburger-icon {
+	margin: 12px;
+	display: none;
+	cursor: pointer;
+}
+
+
+#hamburger-icon div {
+	width: 35px;
+	height: 3px;
+	background-color: white;
+	color: goldenrod;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+
+
+.open .mobile-menu {
+	display: none;
+	flex-direction: column;
+	align-items: left;
+	justify-content: flex-start;
+}
+
+.sidebar {
+	display: flex;
+	position: fixed;
+	top: 50px;
+	right:  0;
+	backdrop-filter: blur(50px);
+	background-color: darkblue;
+	box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+	display: none;
+	flex-direction: column;
+	height: calc(100vh - 50px);
+	width: 300px;
+	z-index: 999;
+}
+
+.sidebar li {
+	width: 100%;
+	top: -80px;
+	
+}
+
+.sidebar li a {
+	width: 100%;
+	
+}
+
+
+.container-back {
+	width: 550px;
+	height: 400px;
+	background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+	position: absolute;
+	top: 110px;
+	box-shadow: 0 0 0 4px white;
+	left: 370px;
+	border-radius: 45px;
+	padding: 25px;
+}
+
+h1 {
+		color: white;
+		font-size: 60px;
+		margin-top: 40px;
+		margin-left: 35px;
+		font-weight: 900;
+		font-family: sans-serif;
+}
+
+h2{
+		font-size: 35px;
+		margin-top: -25px;
+		margin-left: 45px;
+		font-weight: 900;
+		font-family: sans-serif;
+		color: goldenrod;
+}
+
+.zoom {
+		font-size: 30px;
+		margin-top: -25px;
+		margin-left: 55px;
+		font-weight: 900;
+		font-family: sans-serif;
+		color: white;
+}
+
+
+.chill {
+	text-align: center;
+	padding-top: 15px;
+	
+}
+
+.button {
+	font-weight: 800;
+	border-radius: 10px;
+	width: 280px;
+	margin-top: 35px;
+	height: 30px;
+	box-shadow: 0 0 0 3px goldenrod;
+}
+
+.button:hover {
+	color: white;
+	background-color: goldenrod;
+	cursor: pointer;
+	transform: scale(1.1);
+	z-index: 2s;
+    box-shadow: 0 0 0 4px white;
+}
+
+@media only screen and (max-width: 1000px) {
+	h1 {
+		font-size: 40px;
+		margin-left: 28px;
+		font-weight: 800;
+}
+
+.container-back {
+	position: absolute;
+	top: 110px;
+	left: 300px;
+	padding: 20px;
+	width: 400px;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+	.zoom {
+		margin-left: 20px;
+}
+
+	h1 {
+		margin-left: 10px;
+}
+
+.dot {
+	margin-left: 16x;
+}
+
+.container-back {
+	position: absolute;
+	top: 110px;
+	left: 280px;
+	padding: 15px;
+	width: 350px;
+}
+}
+
+
+@media only screen and (max-width: 815px) {
+	ul li {
+	list-style: none;
+	margin-left: 30px;
+	margin-top: -69px;
+	font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 679px) {
+	ul li {
+	list-style: none;
+	margin-left: 10px;
+	margin-top: -69px;
+	font-size: 9px;
+}
+
+.zoom {
+		margin-left: 20px;
+}
+
+	h1 {
+		margin-left: 6px;
+		font-weight: 800;
+		font-size: 40px;
+}
+
+h2 {
+	font-size: 35px;
+		
+		margin-left: 15px;
+		font-weight: 700;
+}
+.dot {
+	margin-left: 16x;
+}
+
+.container-back {
+	position: absolute;
+	top: 110px;
+	left: 230px;
+	padding: 15px;
+	width: 350px;
+}
+
+}
+
+@media only screen and (max-width: 627px) {
+	.container-back {
+	
+	top: 310px;
+	left: 230px;
+	padding: 15px;
+	width: 350px;
+}
+
+.overall-container {
+	text-align: center;
+}
+
+h1 {
+	margin-top: -30px;
+	
+}
+
+	.container-back {
+	position: absolute;
+	top: 300px;
+	left: 120px;
+	padding: 15px;
+	width: 350px;
+
+}
+}
+
+@media only screen and (max-width: 530px) {
+	ul {
+	float: center;
+	display: none;
+	justify-content: center;
+	align-items: center;
+    height: 60px;
+}
+
+.overall-container {
+	margin-top: 80px;
+}
+
+h1 {
+	margin-left: -10px;
+}
+
+.container-back {
+	position: absolute;
+	top: 300px;
+	left: 80px;
+	padding: 15px;
+	width: 350px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+	.container-back {
+	position: absolute;
+	top: 300px;
+	left: 50px;
+	padding: 10px;
+	width: 300px;
+}
+}
